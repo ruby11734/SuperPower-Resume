@@ -1,19 +1,17 @@
 .main {
-  width: 100%;
-  height: 1000px;
   border: 3px solid #73ad21;
   font-size: 15px;
 }
 
 .header {
-  height: 80px;
-  top: 1px;
+  height: 70px;
   margin-top: 3px;
   position: -webkit-sticky;
   position: sticky;
   background-color: #808a8b;
   z-index: 2;
   opacity: 0.8;
+  line-height: 70px;
 }
 
 .header__content {
@@ -24,35 +22,62 @@
 .site__title {
   float: left;
   z-index: 100;
-  text-align: center;
   position: relative;
-  line-height: 1;
 }
 
 .site__title__content {
   font-size: 25px;
-  margin: 38px 0 0 0;
 }
 
 .site__nav {
-  background-color: rosybrown;
   float: right;
 }
 
 .site__nav__menu {
-  display: block;
-  float: left;
+  margin: 0;
 }
 
 .nav__options {
   display: inline-block;
-  margin: 20px 10px 10px;
-  text-align: center;
-  line-height: 1;
+  margin-right: 20px;
+  color: black;
 }
 
-a {
+.nav__icon {
+  display: none;
+}
+
+.mobile__nav {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  max-width: 100px;
+  height: calc(100% - 70px);
+  background-color: brown;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .site__nav__menu {
+    display: none;
+  }
+  .nav__icon {
+    display: block;
+    margin-right: 20px;
+  }
+  .nav__options {
+    display: block;
+  }
+}
+
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
+  color: black;
 }
 
 .main__content {
@@ -80,23 +105,33 @@ a {
   min-height: 250px;
   background: url(/Images/img_avatar2.png) no-repeat center;
   background-size: cover;
+  border-radius: 15px;
 }
 
 .name__section {
   border: 3px solid white;
   background-color: greenyellow;
-  min-height: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .name__title {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .social__media {
   text-align: center;
-  position: relative;
-  margin-top: 40px;
+  margin: 20px;
   background-color: #007bb5;
 }
 
@@ -158,7 +193,7 @@ a {
 
 .copyrights {
   text-align: center;
-  margin: 10px;
+  margin: 10px 0;
   background-color: cadetblue;
   font-size: 12px;
 }
