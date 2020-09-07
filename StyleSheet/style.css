@@ -80,6 +80,15 @@ a:active {
   color: black;
 }
 
+.active {
+  background: white;
+  border-bottom-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
 .main__content {
   background-color: green;
 }

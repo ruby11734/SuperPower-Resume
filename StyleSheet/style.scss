@@ -47,6 +47,8 @@
 .nav__icon {
   display: none;
 }
+
+// mobile navigation
 .mobile__nav {
   position: fixed;
   top: 70px;
@@ -79,11 +81,19 @@ a:active {
   text-decoration: none;
   color: black;
 }
+
+.active {
+  background: white;
+  border-bottom-color: white;
+}
+
+.hidden {
+  display: none;
+}
 //==== navigation bar end ====
 
 //==========================
 // main content
-
 .main__content {
   background-color: green;
 }
@@ -197,3 +207,8 @@ a:active {
   background-color: cadetblue;
   font-size: 12px;
 }
+
+// Home Page end
+// ==================
+
+// Resume Page start
