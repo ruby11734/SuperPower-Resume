@@ -15,9 +15,7 @@ for (let i = 0; i < tabs.length; i++) {
 
   tabs[i].addEventListener("click", () => {
     currentTab.classList.remove("active");
-    // currentTab.classList.add("hidden");
     tabs[i].classList.add("active");
-    // tabs[i].classList.remove("hidden");
     currentTab = tabs[i];
   });
 }
