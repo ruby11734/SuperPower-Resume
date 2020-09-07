@@ -9,8 +9,23 @@ const menu = document.querySelector(".site__nav__menu");
 
 // let currentTab = document.querySelector(".home__page");
 // currentTab.classList.add("active");
+
+icon.addEventListener("click", showMobileSideBar);
+
+function showMobileSideBar() {
+  console.log("======");
+
+  if (menu.className === "site__nav__menu") {
+    menu.className = " mobile__nav";
+  } else {
+    menu.className = "site__nav__menu";
+  }
+}
+
 let currentTab;
 let currentPage;
+
+// to be update
 for (let i = 0; i < tabs.length; i++) {
   currentTab = tabs[0];
   currentTab.classList.add("active");
@@ -28,16 +43,4 @@ for (let i = 0; i < tabs.length; i++) {
     currentTab = tabs[i];
     currentPage = pages[i];
   });
-}
-
-icon.addEventListener("click", showMobileSideBar);
-
-function showMobileSideBar() {
-  console.log("======");
-
-  if (menu.className === "site__nav__menu") {
-    menu.className = " mobile__nav";
-  } else {
-    menu.className = "site__nav__menu";
-  }
 }
