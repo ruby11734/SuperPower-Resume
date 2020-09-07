@@ -37,8 +37,8 @@
                 <i class="fa fa-bars"></i>
               </a>
             <ul class="site__nav__menu">
-              <li class="nav__options home"><a href="#home">Home</a></li>
-              <li class="nav__options resume"><a href="#resume">Resume</a></li>
+              <li class="nav__options "><a href="#home">Home</a></li>
+              <li class="nav__options "><a href="#resume">Resume</a></li>
               <li class="nav__options"><a href="#services">Services</a></li>
               <li class="nav__options"><a href="#blog">Blog</a></li>
               <li class="nav__options"><a href="#contact">Contact</a></li>
@@ -50,7 +50,7 @@
       </header>
       <main class="main__content">
         <!-- Home Page start -->
-        <section class="home__page">
+        <section class="home__page subpage">
           <div class="home__page__header">
             <div class="row">
               <div class="col-sm-4 col-md-4 col-lg-4">
@@ -114,15 +114,41 @@
         </section>
         <!-- Home Page end -->
 
-        <section class="resume">
-          <div>
-
+        <section class="resume subpage">
+          <div class="resume__header">
+            <h1>Resume</h1>
+          </div>
+          <div class="resume__content">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="block">
+                  <div class="block__title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline__item">
+                      <h4 class="item__title">Specialization Cource</h4>
+                      <span class="item__period">2010</span>
+                      <span class="item__company">Apple Inc.</span>
+                      <p class="item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor. </p>
+                    </div>
+                 </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+              <div class="timeline">
+                <div class="timeline__title">
+                  <h3>Education</h3>
+                </div>
+              </div>
+              </div>
+           </div>
           </div>
         </section>
 
-        <section class="services"></section>
-        <section class="blog"></section>
-        <section class="contact"></section>
+        <section class="services subpage"></section>
+        <section class="blog subpage"></section>
+        <section class="contact subpage"></section>
 
 
       </main>
