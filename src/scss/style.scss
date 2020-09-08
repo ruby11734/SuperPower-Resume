@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .main {
   border: 3px solid #73ad21;
   font-size: 15px;
@@ -214,7 +218,7 @@ a:active {
 .resume {
   height: auto;
   max-width: 1032px;
-  background-color: blueviolet;
+  background-color: red;
   margin: 0 auto;
   border-radius: 15px;
   overflow: hidden;
@@ -222,17 +226,17 @@ a:active {
 }
 
 .resume__header {
-  background-color: bisque;
+  background-color: lightgreen;
   text-align: center;
   padding: 30px 50px;
   margin: 0;
 }
 .resume__content {
-  padding: 30px 50px 50px;
+  padding: 30px 50px 30px 50px;
 }
 
 .block {
-  background-color: peru;
+  margin-top: 10px;
 }
 
 .timeline {
@@ -273,5 +277,30 @@ a:active {
     top: 25px;
     left: -29px;
     z-index: 1;
+  }
+}
+
+.skills {
+  &__container {
+    // background-color: white;
+    border: 1px solid gray;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    margin: -5px 0 10px 0;
+  }
+
+  &__percent {
+    background-color: green;
+    height: 15px;
+  }
+  &__1 {
+    width: 88%;
+  }
+  &__2 {
+    width: 75%;
+  }
+  &__3 {
+    width: 60%;
   }
 }
