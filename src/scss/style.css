@@ -95,22 +95,24 @@ a:active {
 }
 
 .main__content {
-  background-color: green;
+  margin-top: 10px;
 }
 
-.home__page {
+.subpage {
   height: auto;
   max-width: 1032px;
-  background-color: red;
   margin: 0 auto;
   border-radius: 15px;
   overflow: visible;
-  padding: 40px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.home__page__header {
+.page__title {
   background-color: pink;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 25px;
+  padding: 40px;
 }
 
 .photo {
@@ -118,34 +120,18 @@ a:active {
   min-height: 250px;
   background: url(/src/assets/img/img_avatar2.png) no-repeat center;
   background-size: cover;
-  border-radius: 15px;
-}
-
-.name__section {
-  border: 3px solid white;
-  background-color: greenyellow;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin-bottom: -60px;
+  vertical-align: baseline;
 }
 
 .name__title {
   text-align: center;
-  margin: 20px 0;
+  margin: 70px 0 20px 0;
 }
 
 .social__media {
   text-align: center;
   margin: 20px;
-  background-color: #007bb5;
 }
 
 .fa {
@@ -173,21 +159,9 @@ a:active {
   color: white;
 }
 
-.col-sm-6,
-.col-md-6,
-.col-lg-6 {
-  background-color: #3b5998;
-  border: 2px solid red;
-}
-
-.about__me {
-  padding: 10px;
-}
-
 .info__list {
   list-style: none;
-  padding: 10px;
-  margin: 0;
+  padding: 0;
 }
 
 .info__list__items {
@@ -211,34 +185,20 @@ a:active {
   font-size: 12px;
 }
 
-.resume {
-  height: auto;
-  max-width: 1032px;
-  background-color: red;
-  margin: 0 auto;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 40px;
-}
-
-.resume__header {
-  background-color: lightgreen;
+.resume__page__title {
   text-align: center;
-  padding: 30px 50px;
-  margin: 0;
 }
 
-.resume__content {
-  padding: 30px 50px 30px 50px;
+.page__content {
+  padding: 30px 40px 30px 40px;
 }
 
 .block {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .timeline {
   border-left: 2px solid #e0e0e0;
-  padding: 15px 0;
 }
 
 .timeline__item {
@@ -302,5 +262,16 @@ a:active {
 
 .skills__3 {
   width: 60%;
+}
+
+.services__page__title {
+  text-align: center;
+}
+
+.services__list__block {
+  background-color: #007bb5;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 25%;
 }
 /*# sourceMappingURL=style.css.map */
