@@ -65,7 +65,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 960px) {
   .site__nav__menu {
     display: none;
   }
@@ -190,15 +190,16 @@ a:active {
 }
 
 .page__content {
-  padding: 30px 40px 30px 40px;
+  padding: 0 40px 30px 40px;
 }
 
-.block {
-  margin-top: 0px;
+.block__title {
+  margin-top: 20px;
 }
 
 .timeline {
   border-left: 2px solid #e0e0e0;
+  margin-top: 20px;
 }
 
 .timeline__item {
@@ -240,7 +241,7 @@ a:active {
 }
 
 .skills__container {
-  border: 1px solid gray;
+  border: 1px solid #e0e0e0;
   height: 15px;
   width: 100%;
   overflow: hidden;
@@ -248,7 +249,7 @@ a:active {
 }
 
 .skills__percent {
-  background-color: green;
+  background-color: #2eca7f;
   height: 15px;
 }
 
@@ -268,10 +269,59 @@ a:active {
   text-align: center;
 }
 
-.services__list__block {
-  background-color: #007bb5;
+.service__block {
   text-align: center;
   margin-bottom: 30px;
-  width: 25%;
+}
+
+.service__icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 28px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.service__icon:hover {
+  -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.service__1 {
+  background: url(/src/assets/img/web_design_icon.png) no-repeat center;
+  background-size: 60px 64px;
+}
+
+.service__2 {
+  background: url(/src/assets/img/photography_icon.png) no-repeat center;
+  background-size: 60px 64px;
+}
+
+.service__3 {
+  background: url(/src/assets/img/creativity_icon.png) no-repeat center;
+  background-size: 60px 64px;
+}
+
+.service__4 {
+  background: url(/src/assets/img/advertising_icon.png) no-repeat center;
+  background-size: 60px 64px;
+}
+
+.client__block {
+  opacity: 0.5;
+  background-color: burlywood;
+}
+
+.client__block:hover {
+  opacity: 1;
+}
+
+.client__image {
+  display: block;
+  max-width: 80px;
+  height: 80px;
+  background: url(/src/assets/img/client_1.png) no-repeat center;
+  background-size: 100% 100%;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
