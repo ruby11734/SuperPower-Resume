@@ -66,7 +66,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 960px) {
   .site__nav__menu {
     display: none;
   }
@@ -236,16 +236,17 @@ a:active {
   // margin: 0;
 }
 .page__content {
-  padding: 30px 40px 30px 40px;
+  padding: 0 40px 30px 40px;
 }
 
-.block {
-  margin-top: 0px;
+.block__title {
+  margin-top: 20px;
 }
 
 .timeline {
   border-left: 2px solid #e0e0e0;
   // padding: 10px 0;
+  margin-top: 20px;
 }
 
 .timeline__item {
@@ -287,7 +288,7 @@ a:active {
 .skills {
   &__container {
     // background-color: white;
-    border: 1px solid gray;
+    border: 1px solid #e0e0e0;
     height: 15px;
     width: 100%;
     overflow: hidden;
@@ -295,7 +296,7 @@ a:active {
   }
 
   &__percent {
-    background-color: green;
+    background-color: #2eca7f;
     height: 15px;
   }
   &__1 {
@@ -313,20 +314,66 @@ a:active {
   text-align: center;
 }
 
-.services__list {
+.service {
   &__block {
-    background-color: #007bb5;
+    // background-color: #007bb5;
     text-align: center;
     margin-bottom: 30px;
-    width: 25%;
   }
 
   &__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 28px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+    }
   }
 
   &__title {
   }
 
   &__info {
+  }
+
+  &__1 {
+    background: url(/src/assets/img/web_design_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__2 {
+    background: url(/src/assets/img/photography_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__3 {
+    background: url(/src/assets/img/creativity_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__4 {
+    background: url(/src/assets/img/advertising_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+}
+
+.client {
+  &__block {
+    // padding: 20px 25px;
+    opacity: 0.5;
+    background-color: burlywood;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 80px;
+    height: 80px;
+    background: url(/src/assets/img/client_1.png) no-repeat center;
+    background-size: 100% 100%;
+    margin: 20px auto;
   }
 }
