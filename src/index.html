@@ -26,7 +26,7 @@
 
   <body>
     <div class="main">
-      <header class="header">
+      <header class="page__header">
         <div class="header__content">
           <!-- title -->
           <div class="site__title">
@@ -38,11 +38,21 @@
               <i class="fa fa-bars"></i>
             </a>
             <ul class="site__nav__menu">
-              <li class="nav__options"><a href="#home">Home</a></li>
-              <li class="nav__options"><a href="#resume">Resume</a></li>
-              <li class="nav__options"><a href="#services">Services</a></li>
-              <li class="nav__options"><a href="#blog">Blog</a></li>
-              <li class="nav__options"><a href="#contact">Contact</a></li>
+              <li class="nav__options">
+                <a class="links" href="#home">Home</a>
+              </li>
+              <li class="nav__options">
+                <a class="links" href="#resume">Resume</a>
+              </li>
+              <li class="nav__options">
+                <a class="links" href="#services">Services</a>
+              </li>
+              <li class="nav__options">
+                <a class="links" href="#blog">Blog</a>
+              </li>
+              <li class="nav__options">
+                <a class="links" href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -394,7 +404,36 @@
           <!-- /services page -->
         </section>
 
-        <section class="blog subpage"></section>
+        <section class="blog subpage">
+          <div class="page__title"><h1>Blog</h1></div>
+
+          <div class="page__content">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="blog__card">
+                  <!-- <a
+                    class="blog__link"
+                    href="https://hades217.github.io/blog-post-1.html"
+                  > -->
+                  <div class="blog__image">
+                    <div class="blog__date"></div>
+                  </div>
+                  <div class="blog__title">
+                    <p>Travel</p>
+                    <h6>Bootstrap is the Most Popular Framework</h6>
+                  </div>
+                  <!-- </a> -->
+                  <!-- /blog__card -->
+                </div>
+                <!-- /col-sm-6 -->
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+          </div>
+
+          <!-- /blog page -->
+        </section>
+
         <section class="contact subpage"></section>
       </main>
 

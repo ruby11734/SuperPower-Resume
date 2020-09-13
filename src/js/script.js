@@ -16,9 +16,9 @@ function showMobileSideBar() {
   console.log("======");
 
   if (menu.className === "site__nav__menu") {
-    menu.className = " mobile__nav";
+    menu.classList.add("mobile__nav");
   } else {
-    menu.className = "site__nav__menu";
+    menu.classList.remove("mobile__nav");
   }
 }
 
