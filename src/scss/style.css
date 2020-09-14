@@ -349,6 +349,7 @@
 }
 
 .blog__card {
+  margin: 20px auto;
   border-radius: 15px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -374,6 +375,23 @@
   background: url(/src/assets/img/blog_post_1.jpg) no-repeat center;
   background-size: cover;
   position: relative;
+}
+
+.blog__date {
+  min-width: 44px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: green;
+}
+
+.blog__date__day {
+  display: block;
+  margin: 3px 0;
 }
 
 .blog__title {
