@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
   </head>
 
   <body>
@@ -578,7 +579,128 @@
           <!-- /blog page -->
         </section>
 
-        <section class="contact subpage"></section>
+        <section class="contact subpage">
+          <div class="page__title"><h1>Contact</h1></div>
+          <div class="page__content">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="block">
+                  <div class="block__title">
+                    <h6>Get in Touch</h6>
+                  </div>
+                  <div class="contact__info">
+                    <iframe
+                      class="map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.1222877339073!2d144.96238575121566!3d-37.81060454153694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642cbb6fe1ca5%3A0x7ea9c9bae0ee5242!2s300%20Swanston%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1600077770476!5m2!1sen!2sau"
+                      frameborder="0"
+                      allowfullscreen=""
+                      aria-hidden="false"
+                      tabindex="0"
+                    ></iframe>
+
+                    <ul class="info__list">
+                      <li class="info__list__items">
+                        <span class="contact__icon">
+                          <i class="fa fa-map-marker"></i>
+                        </span>
+                        <span class="contact__text"
+                          >300 Swanston Street, Melbourne VIC 3000</span
+                        >
+                      </li>
+                      <li class="info__list__items">
+                        <span class="contact__icon"
+                          ><i class="fa fa-envelope"></i
+                        ></span>
+                        <span class="contact__text">glin0214@gmail.com</span>
+                      </li>
+                      <li class="info__list__items">
+                        <span class="contact__icon"
+                          ><i class="fa fa-phone"></i
+                        ></span>
+                        <span class="contact__text">+61412345678</span>
+                      </li>
+                      <li class="info__list__items">
+                        <span class="contact__icon"
+                          ><i class="fa fa-check"></i
+                        ></span>
+                        <span class="contact__text">Freelance Available</span>
+                      </li>
+                    </ul>
+                    <!-- /contact__info -->
+                  </div>
+                  <!-- block -->
+                </div>
+                <!-- /col-sm-6 -->
+              </div>
+              <div class="col-sm-6">
+                <div class="block">
+                  <div class="block__title">
+                    <h6>Contact Form</h6>
+                    <!-- /block__title -->
+                  </div>
+                  <div class="contact__form">
+                    <form
+                      class="contact__form__content"
+                      method="post"
+                      action="contact__form__content/contact__form.php"
+                      novalidate="true"
+                    >
+                      <div class="input__section">
+                        <span class="input__icon">
+                          <i class="fa fa-user"></i>
+                        </span>
+                        <span>
+                          <input
+                            class="input__text"
+                            name="name"
+                            type="text"
+                            placeholder="Full Name"
+                        /></span>
+                      </div>
+
+                      <div class="input__section">
+                        <span class="input__icon">
+                          <i class="fa fa-envelope"></i>
+                        </span>
+                        <span>
+                          <input
+                            class="input__text"
+                            name="email"
+                            type="text"
+                            placeholder="Email Address"
+                        /></span>
+                      </div>
+
+                      <div class="input__section">
+                        <span class="input__icon input__textarea">
+                          <i class="fa fa-comment"></i>
+                        </span>
+                        <span>
+                          <textarea
+                            class="input__text"
+                            name="message"
+                            type="text"
+                            placeholder="Message for Me"
+                            rows="4"
+                          ></textarea>
+                        </span>
+                      </div>
+
+                      <input
+                        type="submit"
+                        class="input__submit"
+                        value="SEND MESSAGE"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <!-- /col-sm-6 -->
+              </div>
+              <!-- /row -->
+            </div>
+            <!-- /page__content -->
+          </div>
+        </section>
       </main>
 
       <footer>
