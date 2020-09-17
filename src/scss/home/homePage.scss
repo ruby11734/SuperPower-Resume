@@ -1,0 +1,57 @@
+@import "../_color";
+
+.photo {
+  min-width: 280px;
+  min-height: 250px;
+  background: url(/src/assets/img/img_avatar2.png) no-repeat center;
+  background-size: cover;
+  margin-bottom: -60px;
+  vertical-align: baseline;
+}
+
+.name__title {
+  text-align: center;
+  margin: 70px 0 20px 0;
+}
+
+.social__media {
+  text-align: center;
+  margin: 20px;
+}
+
+// imported social media links
+.fa {
+  padding: 10px;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+
+.fa-facebook {
+  background-color: $facebook__blue;
+  color: $font__white;
+}
+
+.fa-linkedin {
+  background: $linkedin__blue;
+  color: $font__white;
+}
+
+.fa-google {
+  background: $google_red;
+  color: $font__white;
+}
+
+.key {
+  display: inline-block;
+
+  min-width: 80px;
+}
+
+.value {
+  display: inline-block;
+  color: $font__gray;
+}
