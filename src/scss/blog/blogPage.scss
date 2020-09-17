@@ -1,0 +1,69 @@
+@import "../_color";
+
+.blog {
+  &__card {
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 5px $shadow__2;
+
+    &:hover {
+      box-shadow: 0 4px 15px $shadow__2;
+      .mask {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__link,
+  &__link:hover {
+    color: $font__black;
+    text-decoration: none;
+  }
+
+  &__image {
+    height: 200px;
+    background: url(/src/assets/img/blog_post_1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__date {
+    min-width: 44px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    padding: 3px;
+    background-color: $background__white;
+    color: $font__green;
+
+    &__day {
+      display: block;
+      margin: 3px 0;
+    }
+  }
+
+  &__title {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  // position: relative;
+
+  background: $mask__background;
+  visibility: hidden;
+
+  &::after {
+    content: "\f0f6";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: $font__white;
+  }
+}

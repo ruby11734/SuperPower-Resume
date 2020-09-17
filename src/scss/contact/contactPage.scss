@@ -1,0 +1,49 @@
+@import "../_color";
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: 3px solid $border__gray;
+}
+
+.contact__icon {
+  width: 36px;
+  height: 36px;
+  background-color: $contact__icon__background;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 36px;
+  margin: auto 20px;
+}
+
+.input {
+  &__icon {
+    background-color: $contact__icon__background;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+  }
+
+  &__text {
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid $border__gray;
+    outline: none;
+  }
+
+  &__textarea {
+    // text-align: center;
+    margin: auto 20px;
+  }
+
+  &__submit {
+    padding: 10px 10px;
+    border: 0;
+    margin: 20px;
+    box-shadow: 0 1px 1px $shadow__1, 0 2px 4px $shadow__2;
+    &:hover {
+      box-shadow: 0 2px 4px $shadow__1, 0 4px 8px $shadow__2;
+    }
+  }
+}

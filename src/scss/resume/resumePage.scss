@@ -1,0 +1,67 @@
+@import "../_color";
+
+.timeline {
+  border-left: 2px solid $border__gray;
+  margin-top: 20px;
+}
+
+.timeline__item {
+  position: relative;
+  padding: 15px 20px 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: $background__white;
+  border-left: 2px solid $font__green;
+  box-shadow: 0px 0px 3px 0px $shadow__2;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: $background__white;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -29px;
+    border: 2px solid $border__green;
+    z-index: 10;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: $border__green;
+    border-radius: 10px;
+    width: 29px;
+    height: 2px;
+    top: 25px;
+    left: -29px;
+    z-index: 5;
+  }
+}
+
+.skills {
+  &__container {
+    // background-color: white;
+    border: 1px solid $border__gray;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    margin: -5px 0 10px 0;
+  }
+
+  &__percent {
+    background-color: $background__green;
+    height: 15px;
+  }
+  &__1 {
+    width: 88%;
+  }
+  &__2 {
+    width: 75%;
+  }
+  &__3 {
+    width: 60%;
+  }
+}

@@ -1,0 +1,58 @@
+@import "__color.scss";
+
+@import "./header/header.scss";
+@import "./home/homePage.scss";
+@import "./resume/resumePage.scss";
+@import "./service/servicePage.scss";
+@import "./blog/blogPage.scss";
+@import "./contact/contactPage.scss";
+@import "./footer/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-size: 15px;
+  position: relative;
+}
+
+.main__content {
+  margin-top: 10px;
+}
+
+.subpage {
+  height: auto;
+  max-width: 1032px;
+  // background-color: red;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 $shadow__2;
+}
+
+.page__title {
+  background-color: $page__title__color;
+  border-radius: 15px 15px 0 0;
+  // position: relative;
+  margin-bottom: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+.page__content {
+  padding: 10px 40px 30px 40px;
+}
+
+.info__list {
+  list-style: none;
+  padding: 0;
+}
+
+.info__list__items {
+  margin: 10px 0;
+}
+
+.block__title {
+  margin-top: 20px;
+}

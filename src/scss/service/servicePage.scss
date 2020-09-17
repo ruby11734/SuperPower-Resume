@@ -1,0 +1,60 @@
+@import "../_color";
+
+.service {
+  &__block {
+    // background-color: #007bb5;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 28px auto;
+    border: 1px solid $shadow__1;
+
+    &:hover {
+      box-shadow: 0 7px 12px $shadow__1;
+      transform: translateY(-7px);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__1 {
+    background: url(/src/assets/img/web_design_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__2 {
+    background: url(/src/assets/img/photography_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__3 {
+    background: url(/src/assets/img/creativity_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+  &__4 {
+    background: url(/src/assets/img/advertising_icon.png) no-repeat center;
+    background-size: 60px 64px;
+  }
+}
+
+.client {
+  &__block {
+    opacity: 0.5;
+    // background-color: burlywood;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 80px;
+    height: 80px;
+    background: url(/src/assets/img/client_1.png) no-repeat center;
+    background-size: 100% 100%;
+    margin: 20px auto;
+  }
+}
