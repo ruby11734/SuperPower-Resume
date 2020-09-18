@@ -29,6 +29,11 @@
   border-radius: 15px;
   overflow: visible;
   box-shadow: 0 4px 8px 0 $shadow__2;
+  display: none;
+}
+
+.current__page {
+  display: block;
 }
 
 .page__title {
